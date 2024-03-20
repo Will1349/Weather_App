@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8" />
+    <!-- Codificación de caracteres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Modo de compatibilidad con IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Escala para dispositivos móviles -->
+    <!-- Enlace a las fuentes de Google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Enlace al archivo CSS personalizado -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Título de la página -->
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <!-- Contenedor principal -->
+    <div class="container">
+      <!-- Caja de búsqueda -->
+      <div class="search-box">
+        <!-- Icono de ubicación -->
+        <i class="fa-solid fa-location-dot"></i>
+        <!-- Input para ingresar la ubicación -->
+        <input type="text" placeholder="Enter your location" />
+        <!-- Botón de búsqueda -->
+        <button class="fa-solid fa-magnifying-glass"></button>
+      </div>
+
+      <!-- Sección para mostrar mensaje de error -->
+      <div class="not-found">
+        <!-- Imagen de error -->
+        <img src="images/404.png" />
+        <!-- Mensaje de error -->
+        <p>Oops! Invalid location :/</p>
+      </div>
+
+      <!-- Sección para mostrar información del clima -->
+      <div class="weather-box">
+        <!-- Imagen del clima -->
+        <img src="" />
+        <!-- Temperatura -->
+        <p class="temperature"></p>
+        <!-- Descripción del clima -->
+        <p class="description"></p>
+      </div>
+
+      <!-- Detalles adicionales del clima -->
+      <div class="weather-details">
+        <!-- Humedad -->
+        <div class="humidity">
+          <!-- Icono de agua -->
+          <i class="fa-solid fa-water"></i>
+          <!-- Texto de humedad -->
+          <div class="text">
+            <span></span>
+            <!-- Valor de humedad -->
+            <p>Humidity</p>
+            <!-- Etiqueta de humedad -->
+          </div>
+        </div>
+        <!-- Velocidad del viento -->
+        <div class="wind">
+          <!-- Icono de viento -->
+          <i class="fa-solid fa-wind"></i>
+          <!-- Texto de velocidad del viento -->
+          <div class="text">
+            <span></span>
+            <!-- Valor de velocidad del viento -->
+            <p>Wind Speed</p>
+            <!-- Etiqueta de velocidad del viento -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script para cargar Font Awesome y el archivo JavaScript -->
+    <script
+      src="https://kit.fontawesome.com/7c8801c017.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
